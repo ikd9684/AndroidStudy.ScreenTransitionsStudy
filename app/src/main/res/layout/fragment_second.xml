@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background_2nd"
-        tools:context=".FirstFragment">
+        tools:context=".SecondFragment">
 
         <ImageButton
-            android:id="@+id/imageButtonBackToActivity"
+            android:id="@+id/imageButtonBackTo1st"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_marginStart="40dp"
@@ -25,27 +25,27 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/buttonTo2ndFragment"
+            android:id="@+id/buttonTo3rdFragment"
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/standard_button_rounded"
-            android:text="To 2nd Fragment"
+            android:text="To 3rd Fragment"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButtonBackToActivity"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonBackTo1st"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButtonBackToActivity"
-            app:layout_constraintTop_toTopOf="@+id/imageButtonBackToActivity" />
+            app:layout_constraintStart_toEndOf="@+id/imageButtonBackTo1st"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonBackTo1st" />
 
         <TextView
-            android:id="@+id/textViewOne4"
+            android:id="@+id/textViewOne5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
+            android:text="2"
             android:textColor="@color/text_color_primary"
             android:textSize="200sp"
             android:textStyle="bold"
@@ -55,16 +55,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textViewMainActivity4"
+            android:id="@+id/textViewMainActivity5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1st Fragment"
+            android:text="2nd Fragment"
             android:textColor="@color/text_color_normal"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
