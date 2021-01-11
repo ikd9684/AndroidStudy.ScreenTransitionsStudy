@@ -26,8 +26,14 @@ class FragmentActivity : AppCompatActivity() {
 
     fun nextFragment(fragment: Fragment) {
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
+//        transaction.setCustomAnimations(
+//            R.anim.nav_up_enter_anim,
+//            R.anim.nav_up_exit_anim,
+//            R.anim.nav_up_pop_enter_anim,
+//            R.anim.nav_up_pop_exit_anim
+//        )
         transaction.addToBackStack(null)
-        transaction.add(R.id.container, fragment)
+        transaction.replace(R.id.container, fragment)
         transaction.commit()
     }
 }
