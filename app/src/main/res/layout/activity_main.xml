@@ -38,6 +38,23 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/buttonToFragmentActivity"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/standard_button_rounded"
+            android:text="To FragmentActivity"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/buttonTo2ndActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
             android:id="@+id/buttonTo2ndActivity"
             android:layout_width="0dp"
             android:layout_height="55dp"

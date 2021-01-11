@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.lifecycleOwner = this
 
+        binding.buttonToFragmentActivity.setOnClickListener {
+            val intent = Intent(this, FragmentActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.buttonTo2ndActivity.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
